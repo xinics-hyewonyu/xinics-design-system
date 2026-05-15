@@ -35,8 +35,11 @@ export function App() {
     );
   }
 
+  // GitHub Pages 같은 서브경로 배포(`/xinics-design-system/`)와 로컬 dev(`/`) 양쪽에서
+  // 라우팅이 일관되도록 Vite가 주입하는 BASE_URL을 basename으로 사용. 로컬 dev에선 "/"
+  // 이므로 동작 변화 없음.
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<DashboardPage />} />
         <Route path="/projects/:id" element={<EditorPage />} />
