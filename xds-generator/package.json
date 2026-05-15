@@ -1,0 +1,45 @@
+{
+  "name": "xds-generator",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "XDS Generator — Xinics Design System 생성 도구 (Sprint 1A 기반)",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives",
+    "demo:export": "tsx scripts/demo-export.ts"
+  },
+  "dependencies": {
+    "@types/jszip": "^3.4.0",
+    "axe-core": "^4.11.4",
+    "culori": "^4.0.1",
+    "immer": "^11.1.8",
+    "jszip": "^3.10.1",
+    "lucide-react": "^0.469.0",
+    "react": "^18.3.1",
+    "react-colorful": "^5.7.0",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.15.0",
+    "zustand": "^5.0.13"
+  },
+  "devDependencies": {
+    "@types/culori": "^2.1.1",
+    "@types/node": "^22.10.5",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.17.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.7",
+    "vitest": "^2.1.8"
+  }
+}
